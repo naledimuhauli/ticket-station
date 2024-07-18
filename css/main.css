@@ -51,6 +51,20 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+	.concert-btn{
+		display: block;
+		margin: auto;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.concert-btn{
+		margin-bottom: 10px;
+		background-color: transparent;
+		color: white;
+	}
+
+	
 
 /* Box Model */
 
@@ -3348,6 +3362,7 @@
 			font-size: 1.25em;
 			font-weight: 300;
 			margin: 0;
+			text-align: center;
 		}
 
 		.video .link {
