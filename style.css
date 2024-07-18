@@ -29,9 +29,12 @@ body{
 .container .title::before{
     content: '';
     position: absolute;
+    left: 0;
+    bottom: 0;
     height: 3px;
     width: 30px;
-    
+    background: #9b59b6;
+
 }
 
 
