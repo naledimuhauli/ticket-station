@@ -4,13 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>EventCon</title>
+    <title>Ticket Oasis</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/d6a83b973d.js" crossorigin="anonymous"></script>
 
     <!-- CSS here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -43,7 +51,7 @@
                             <div class="col-xl-3 col-lg-3">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                       <p>Ticket Oasis</p>
                                     </a>
                                 </div>
                             </div>
@@ -52,20 +60,12 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">home</a></li>
-                                            <li><a href="performer.html">Performer</a></li>
                                             
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <li><a href="#">Events <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a href="about.html">about</a></li>
-                                                    <li><a href="Program.html">Program</a></li>
-                                                    <li><a href="Venue.html">Venue</a></li>
-                                                    <li><a href="elements.html">elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
+                                                    <li><a href="charity.html">Charity</a></li>
+                                                    <li><a href="educational.html">Educational</a></li>
+                                                    <li><a href="concerts.html">Concerts</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -76,7 +76,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="buy_tkt">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a href="#">Buy Tickets</a>
+                                        <a href="details.html">Sign-in/Register</a>
                                     </div>
                                 </div>
                             </div>
@@ -92,6 +92,7 @@
     </header>
     <!-- header-end -->
 
+
      <!-- bradcam_area -->
      <div class="bradcam_area">
         <div class="single_bradcam  d-flex align-items-center bradcam_bg_1 overlay">
@@ -105,7 +106,7 @@
                             <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".3s">
                                 <img src="img/shape/shape_2.svg" alt="">
                             </div>
-                                <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Venue</h3>
+                                <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Concerts</h3>
                           </div>
                        </div>
                     </div>
@@ -113,111 +114,129 @@
            </div>
      </div>
     <!-- bradcam_area end -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/concert3.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Will Linley</h1>
+            <table class="table table-borderless">
+                <tr>
+                    <th>Date & Time</th>
+                    <td>Aug 25,2024 | 12:00pm</td>
+                </tr>
+                <tr>
+                    <th>Venue</th>
+                    <td>
+                        <strong>Chris Saunders Park</strong>
+                        <br>
+                        Centenary Boulevard <br>
+                        Umhlanga <br>
+                        South Africa
+                    </td>
+                </tr>
+              </table>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Buy Ticket</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- map_area_start  -->
-    <div class="map_area">
-        <div id="map" style="height: 600px; position: relative; overflow: hidden;">
-        
-        </div>
-        <script>
-            function initMap() {
-                var uluru = {
-                    lat: -25.363,
-                    lng: 131.044
-                };
-                var grayStyles = [{
-                        featureType: "all",
-                        stylers: [{
-                                saturation: -90
-                            },
-                            {
-                                lightness: 50
-                            }
-                        ]
-                    },
-                    {
-                        elementType: 'labels.text.fill',
-                        stylers: [{
-                            color: '#ccdee9'
-                        }]
-                    }
-                ];
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: -31.197,
-                        lng: 150.744
-                    },
-                    zoom: 9,
-                    styles: grayStyles,
-                    scrollwheel: false
-                });
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
-        </script>
-        <div class="location_information black_bg wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-            <h3>Concert 2020</h3>
-            <div class="info_wrap">
-                <div class="single_info">
-                    <span>Vanue:</span>
-                    <p>26/A, Coontum Avenu
-                        New York-2783</p>
-                </div>
-                <div class="single_info">
-                    <span>Phone:</span>
-                    <p>+10 (88) 267 368 283</p>
-                </div>
-                <div class="single_info">
-                    <span>Email:</span>
-                    <p>contact@concert20.com</p>
-                </div>
+      <hr>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+             <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Atlantic Star</h1>
+            <table class="table table-borderless">
+                <tr>
+                    <th>Date & Time</th>
+                    <td>Sep 28,2024 | 8:00pm</td>
+                </tr>
+                <tr>
+                    <th>Venue</th>
+                    <td>
+                        <strong>The Grand Arena At Grand West</strong>
+                        <br>
+                        1 Jakes Gerwel Dr <br>
+                        Cape Town <br>
+                        South Africa
+                    </td>
+                </tr>
+              </table>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Buy Ticket</button>
             </div>
+          </div>
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/concert2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+         
         </div>
-    </div>
-    <!-- map_area_end  -->
-
-    <!-- brand_area_start  -->
-    <div class="brand_area black_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text-center mb-80">
-                        <h4 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Sponsor Logos</h4>
-                    </div>
-                </div>
+      </div>
+      <hr>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/concert1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Keyshia Cole</h1>
+            <table class="table table-borderless">
+                <tr>
+                    <th>Date & Time</th>
+                    <td>Sep 29,2024 | 6:00pm</td>
+                </tr>
+                <tr>
+                    <th>Venue</th>
+                    <td>
+                        <strong>SunBet Arena at Time Square Casino</strong>
+                        <br>
+                        209 Aramist Avenue <br>
+                        Pretoria 0010 <br>
+                        South Africa
+                    </td>
+                </tr>
+              </table>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Buy Ticket</button>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="brand_wrap">
-                        <div class="brand_active owl-carousel">
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/3.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/4.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/5.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/1.png" alt="">
-                            </div>
-                            <div class="single_brand text-center">
-                                <img src="img/brand/2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <!-- brand_area_end  -->
+      </div>
+      <hr>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+             <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Jeremy Loops</h1>
+            <table class="table table-borderless">
+                <tr>
+                    <th>Date & Time</th>
+                    <td>Oct 19,2024 | 1:00pm</td>
+                </tr>
+                <tr>
+                    <th>Venue</th>
+                    <td>
+                        <strong>9A John Zikhali Rd</strong>
+                        <br>
+                        209 Aramist Avenue <br>
+                        Durban 4001 <br>
+                        South Africa
+                    </td>
+                </tr>
+              </table>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Buy Ticket</button>
+            </div>
+          </div>
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/concert4.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+         
+        </div>
+      </div>
+    
     <!-- footer_start  -->
     <footer class="footer">
         <div class="footer_top">
