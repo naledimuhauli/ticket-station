@@ -112,6 +112,14 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+.concert-btn .btn{
+  color: white;
+  background-color: #191d34;
+}
+.concert-btn .btn:hover{
+  background-color: rgb(128, 20, 20);
+  color: black;
+}
 
 /* line 77, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 li {
