@@ -25,6 +25,7 @@ body{
     font-size: 25px;
     font-weight: 500;
     position: relative;
+    margin-bottom: 5px;
 }
 .container .title::before{
     content: '';
@@ -45,6 +46,11 @@ form .user-details .input-box{
     margin-bottom: 15px;
     width: calc(100% / 2 - 20px);
    
+}
+.registration-form input{
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0px;
 }
 
 .user-details.input-box .details{
