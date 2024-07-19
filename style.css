@@ -126,9 +126,13 @@ form .gender-details .category{
 
  }
  form .button input:hover{
-    background: linear-gradient(-, #71b7e6, #9b59b6);
+    background: linear-gradient(- #71b7e6, #9b59b6);
+
     
+ 
  }
+
+
  @media (max-width: 584px){
     .container{
         max-width: 100%;
