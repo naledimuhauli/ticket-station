@@ -73,6 +73,7 @@ document.getElementById('view-tickets-btn').addEventListener('click', () => {
     }
 });
 
+
 document.getElementById('book-ticket-btn').addEventListener('click', () => {
     document.getElementById('ticket-view').style.display = 'none';
     document.getElementById('booking-form').style.display = 'block';
@@ -99,4 +100,6 @@ function updateTotalPrice() {
 function showConfirmation() {
     document.getElementById('booking-form').style.display = 'none';
     document.getElementById('confirmation').style.display = 'block';
+
 }
+

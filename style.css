@@ -169,6 +169,10 @@ form .gender-details .category{
     color: #3f413f;
     
 }
+.checkout{
+    text-decoration: none;
+    color: white;
+}
 
 h1, h2 {
     text-align: center;
