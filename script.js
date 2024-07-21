@@ -24,7 +24,7 @@ class EventTickets {
     }
 
     getAllPastEvents() {
-        // Dummy past events data
+        // past events data
         return [
             { id: 'past1', name: 'Past Event 1 - General Admission', price: 200 },
             { id: 'past2', name: 'Past Event 2 - VIP', price: 1000 },
