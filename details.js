@@ -63,7 +63,7 @@ class Registration {
         document.body.innerHTML = `
             <div class="container text-center">
                 <h2>Registration Successful</h2>
-                <p>Thank you for registering. You can now sign in.</p>
+                <p>Thank you for registering.</p>
                 <button class="btn btn-primary" id="continue-btn">Continue</button>
             </div>
         `;

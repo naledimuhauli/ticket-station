@@ -22,6 +22,15 @@ class EventTickets {
     getTickets(eventId) {
         return this.events[eventId] || [];
     }
+
+    getAllPastEvents() {
+        // Dummy past events data
+        return [
+            { id: 'past1', name: 'Past Event 1 - General Admission', price: 200 },
+            { id: 'past2', name: 'Past Event 2 - VIP', price: 1000 },
+            { id: 'past3', name: 'Past Event 3 - General Admission', price: 300 },
+        ].map(ticket => new Ticket(ticket.id, ticket.name, ticket.price));
+    }
 }
 
 const eventTickets = new EventTickets();
@@ -70,9 +79,11 @@ document.getElementById('view-tickets-btn').addEventListener('click', () => {
         });
 
         document.getElementById('ticket-view').style.display = 'block';
+        document.getElementById('booking-form').style.display = 'none';
+        document.getElementById('confirmation').style.display = 'none';
+        document.getElementById('past-events').style.display = 'none';
     }
 });
-
 
 document.getElementById('book-ticket-btn').addEventListener('click', () => {
     document.getElementById('ticket-view').style.display = 'none';
@@ -88,6 +99,23 @@ document.getElementById('ticket-booking-form').addEventListener('submit', event 
     showConfirmation();
 });
 
+document.getElementById('view-past-events-btn').addEventListener('click', () => {
+    const pastEvents = eventTickets.getAllPastEvents();
+    const pastEventsList = document.getElementById('past-events-list');
+    pastEventsList.innerHTML = '';
+
+    pastEvents.forEach(event => {
+        const li = document.createElement('li');
+        li.textContent = event.getDetails();
+        pastEventsList.appendChild(li);
+    });
+
+    document.getElementById('ticket-view').style.display = 'none';
+    document.getElementById('booking-form').style.display = 'none';
+    document.getElementById('confirmation').style.display = 'none';
+    document.getElementById('past-events').style.display = 'block';
+});
+
 function updateTotalPrice() {
     const ticketSelect = document.getElementById('ticket-select');
     const quantity = document.getElementById('quantity').value;
@@ -100,6 +128,10 @@ function updateTotalPrice() {
 function showConfirmation() {
     document.getElementById('booking-form').style.display = 'none';
     document.getElementById('confirmation').style.display = 'block';
+    document.getElementById('ticket-view').style.display = 'none';
+    document.getElementById('past-events').style.display = 'none';
 
+    document.getElementById('continue-btn').addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
 }
-

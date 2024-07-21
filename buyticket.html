@@ -23,14 +23,18 @@
         </select>
         <button id="view-tickets-btn">View Tickets</button>
         <button id="view-past-events-btn">View Past Events</button>
-
     </section>
     
     <!-- Ticket Viewing Page-->
     <section id="ticket-view" style="display: none;">
+<<<<<<< Updated upstream
         <h2>Upcoming  Events</h2>
         <ul id="ticket-list">
         </ul>
+=======
+        <h2>Available Tickets</h2>
+        <ul id="ticket-list"></ul>
+>>>>>>> Stashed changes
         <button id="book-ticket-btn">Book Ticket</button>
     </section>
     
@@ -39,16 +43,16 @@
         <h2>Booking Form</h2>
         <form id="ticket-booking-form">
             <label for="ticket-select">Select Ticket:</label>
-                <select id="ticket-select">
-                    <!-- Options will be populated dynamically -->
-                </select>
+            <select id="ticket-select">
+                <!-- Options will be populated dynamically -->
+            </select>
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <label for="name">Surname:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
@@ -67,10 +71,15 @@
     <section id="confirmation" style="display: none;">
         <h2>Booking Confirmation</h2>
         <p>Thank you for booking! Your tickets have been confirmed.</p>
+        <button id="continue-btn">Continue</button>
+    </section>
+
+    <!-- Past Events Section -->
+    <section id="past-events" style="display: none;">
+        <h2>Past Events</h2>
+        <ul id="past-events-list"></ul>
     </section>
 </div>
 <script src="script.js"></script>
-
-    
 </body>
 </html>
