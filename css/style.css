@@ -121,6 +121,15 @@ ul {
   color: black;
 }
 
+#sign-out-btn{
+  padding: 10px;
+  background-color: #001D38;
+  color: #fffefe;
+  height: 50px;
+  width: 160px;
+
+}
+
 /* line 77, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 li {
   list-style: none;
@@ -1146,7 +1155,7 @@ h3 {
 .header-area .main-header-area .buy_tkt .book_btn a {
   background: #FF4533;
   font-family: "Anton", sans-serif;
-  padding: 12px 46px;
+  padding: 12px 30px;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid transparent;
