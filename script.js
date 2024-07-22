@@ -7,7 +7,7 @@ class Ticket {
     }
 
     getDetails() {
-        return `${this.name }/ ${this.date} - ZAR ${this.price} `;
+        return `${this.name} / ${this.date} - ZAR ${this.price}`;
     }
 }
 
@@ -36,7 +36,7 @@ class EventTickets {
 
 const eventTickets = new EventTickets();
 eventTickets.addEvent('event1', [
-    { id: 'ticket1', name: 'Will Linley Concert Ticket - General Admission', price: 500, date: '25 Aug'},
+    { id: 'ticket1', name: 'Will Linley Concert Ticket - General Admission', price: 500, date: '25 Aug' },
     { id: 'ticket2', name: 'Will Linley Concert Ticket - VIP', price: 1500, date: '25 Aug' },
     { id: 'ticket3', name: 'Atlantic Star Concert Ticket - General Admission', price: 700, date: '28 Sep' },
     { id: 'ticket4', name: 'Atlantic Star Concert Ticket - VIP', price: 2300, date: '28 Sep' },
@@ -48,15 +48,14 @@ eventTickets.addEvent('event1', [
 eventTickets.addEvent('event2', [
     { id: 'ticket8', name: 'Orphanage - Charity Ticket - Regular', price: 850, date: '16 Dec' },
     { id: 'ticket9', name: 'Jeans4Genes - Charity Ticket - Premium', price: 700, date: '16 Sep' },
-    { id: 'ticket10', name: 'Breast Cancer - Charity Ticket - Free', price: 1000, date: '03 Oct' },
-    { id: 'ticket11', name: 'Giving Back - Charity Ticket - Free', price: 650, date: '05 Nov' }
+    { id: 'ticket10', name: 'Breast Cancer - Charity Ticket - Regular', price: 1000, date: '03 Oct' },
+    { id: 'ticket11', name: 'Giving Back - Charity Ticket - Regular', price: 650, date: '05 Nov' }
 ]);
 
 eventTickets.addEvent('event3', [
     { id: 'ticket12', name: 'Education Event Ticket - Standard', price: 900, date: '03 Oct' },
     { id: 'ticket13', name: 'Education Event Ticket - VIP', price: 1800, date: '16 Nov' }
 ]);
-
 
 document.getElementById('view-tickets-btn').addEventListener('click', () => {
     const eventSelect = document.getElementById('event-select');
@@ -149,3 +148,9 @@ function updateTotalPrice() {
     const totalPrice = ticketPrice * quantity;
     document.getElementById('total-price').textContent = totalPrice.toFixed(2);
 }
+
+// Adding Go Back button event listener
+document.getElementById('go-back-btn').addEventListener('click', () => {
+    document.getElementById('past-events').style.display = 'none';
+    document.getElementById('event-selection').style.display = 'block';
+});
