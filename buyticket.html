@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Event</title>
+    <title>Booking system</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,35 +15,15 @@
     <section id="event-selection">
         <h2>Select an Event</h2>
         <select id="event-select">
-            <option value="" disabled selected>-- Select Event --</option>
+            <option value="" disabled selected>--select event--</option>
             <option value="event1">Concert</option>
-            <option value="event1">Will Linley Concert Ticket - General Admission (July 1, 2024)</option>
-            <option value="event1">Will Linley Concert Ticket - VIP (July 30, 2024)</option>
-            <option value="event1">Atlantic Star Concert Ticket - General Admission (August 15, 2024)</option>
-            <option value="event1">Atlantic Star Concert Ticket - VIP (September 5, 2024)</option>
-            <option value="event1">Keyisha Cole Concert Ticket - General Admission (October 10, 2024)</option>
-            <option value="event1">Jeremy Loops Concert Ticket - General Admission (November 1, 2024)</option>
-            <option value="event1">Jeremy Loops Concert Ticket - VIP (November 20, 2024)</option>
-
-            <option value="event2">Charity Event</option>
-            <option value="event2">Orphanage - Charity Ticket - Regular (July 15, 2024)</option>
-            <option value="event2">Jeans4Genes - Charity Ticket - Premium (August 5, 2024)</option>
-            <option value="event2">Breast Cancer - Charity Ticket - Free (September 10, 2024)</option>
-            <option value="event2">Giving Back - Charity Ticket - Free (October 20, 2024)</option>
-
-
+            <option value="event2">Charity Events</option>
             <option value="event3">Educational Events</option>
-            <option value="event3">Panel Discussion Event Ticket - Standard (August 1, 2024)</option>
-            <option value="event3">Conference Event Ticket - VIP (September 15, 2024)</option>
-            <option value="event3">Seminar Event Ticket - Standard (September 15, 2024)</option>
-            <option value="event3">Seminar Event Ticket - VIP (September 15, 2024)</option>
-            <option value="event3">Seminar Event Ticket - Standard (September 15, 2024)</option>
-            <option value="event7">Free Event - October 21, 2024</option>
+            <option value="event7">Free Event</option>
         </select>
         <button id="view-tickets-btn">View Tickets</button>
         <button id="view-past-events-btn">View Past Events</button>
     </section>
-    
     
     <!-- Ticket Viewing Page-->
     <section id="ticket-view" style="display: none;">
@@ -74,7 +54,7 @@
             </div>
             <div class="form-group">
                 <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="0" required>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
                 <p>Total Price: R<span id="total-price">0</span></p>
             </div>
             <button type="submit">Confirm Booking</button>

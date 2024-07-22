@@ -3,7 +3,6 @@ class Ticket {
         this.id = id;
         this.name = name;
         this.price = price;
-        
     }
 
     getDetails() {
@@ -25,7 +24,7 @@ class EventTickets {
     }
 
     getAllPastEvents() {
-        // past events data
+        // Dummy past events data
         return [
             { id: 'past1', name: 'Past Event 1 - General Admission', price: 200 },
             { id: 'past2', name: 'Past Event 2 - VIP', price: 1000 },
@@ -36,7 +35,7 @@ class EventTickets {
 
 const eventTickets = new EventTickets();
 eventTickets.addEvent('event1', [
-    { id: 'ticket1', name: 'Will Linley Concert Ticket - General Admission', price: 500,  },
+    { id: 'ticket1', name: 'Will Linley Concert Ticket - General Admission', price: 500 },
     { id: 'ticket2', name: 'Will Linley Concert Ticket - VIP', price: 1500 },
     { id: 'ticket3', name: 'Atlantic Star Concert Ticket - General Admission', price: 700 },
     { id: 'ticket4', name: 'Atlantic Star Concert Ticket - VIP', price: 2300 },
