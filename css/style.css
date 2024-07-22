@@ -130,6 +130,16 @@ ul {
 
 }
 
+#myUL{
+  margin: 30px;
+  
+  font-size: 40px;
+  font-weight: 600;
+}
+#myUL li {
+  color: white;
+}
+
 /* line 77, ../../Arafath/CL/December/236. Event-02/HTML/scss/theme-default.scss */
 li {
   list-style: none;
