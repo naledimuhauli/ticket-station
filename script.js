@@ -3,6 +3,7 @@ class Ticket {
         this.id = id;
         this.name = name;
         this.price = price;
+        
     }
 
     getDetails() {
@@ -35,7 +36,7 @@ class EventTickets {
 
 const eventTickets = new EventTickets();
 eventTickets.addEvent('event1', [
-    { id: 'ticket1', name: 'Will Linley Concert Ticket - General Admission', price: 500 },
+    { id: 'ticket1', name: 'Will Linley Concert Ticket - General Admission', price: 500,  },
     { id: 'ticket2', name: 'Will Linley Concert Ticket - VIP', price: 1500 },
     { id: 'ticket3', name: 'Atlantic Star Concert Ticket - General Admission', price: 700 },
     { id: 'ticket4', name: 'Atlantic Star Concert Ticket - VIP', price: 2300 },
