@@ -46,10 +46,10 @@ eventTickets.addEvent('event1', [
 ]);
 
 eventTickets.addEvent('event2', [
-    { id: 'ticket8', name: 'Orphanage - Charity Ticket - Regular', price: 600, date: '25 Aug' },
-    { id: 'ticket9', name: 'Jeans4Genes - Charity Ticket - Premium', price: 500, date: '25 Aug' },
-    { id: 'ticket10', name: 'Breast Cancer - Charity Ticket - Free', price: 0, date: '25 Aug' },
-    { id: 'ticket11', name: 'Giving Back - Charity Ticket - Free', price: 0, date: '25 Aug' }
+    { id: 'ticket8', name: 'Orphanage - Charity Ticket - Regular', price: 850, date: '16 Dec' },
+    { id: 'ticket9', name: 'Jeans4Genes - Charity Ticket - Premium', price: 700, date: '16 Sep' },
+    { id: 'ticket10', name: 'Breast Cancer - Charity Ticket - Free', price: 1000, date: '03 Oct' },
+    { id: 'ticket11', name: 'Giving Back - Charity Ticket - Free', price: 650, date: '05 Nov' }
 ]);
 
 eventTickets.addEvent('event3', [
