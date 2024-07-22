@@ -12,10 +12,18 @@ class User {
         localStorage.setItem(this.username, JSON.stringify(this));
     }
 
+    // static getUser(username) {
+    //     const user = localStorage.getItem(username);
+    //     return user ? JSON.parse(user) : null;
+    // }
     static getUser(username) {
         const user = localStorage.getItem(username);
-        return user ? JSON.parse(user) : null;
-    }
+        if (user) {
+            return JSON.parse(user);
+        } else {
+            return null;
+        }
+    }  //this code does the exact same thing as the code above
 
     static setCurrentUser(username) {
         localStorage.setItem('currentUser', username);

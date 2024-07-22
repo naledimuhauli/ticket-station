@@ -53,8 +53,8 @@ eventTickets.addEvent('event2', [
 ]);
 
 eventTickets.addEvent('event3', [
-    { id: 'ticket12', name: 'Education Event Ticket - Standard', price: 900, date: '03 Oct' },
-    { id: 'ticket13', name: 'Education Event Ticket - VIP', price: 1800, date: '16 Nov' }
+    { id: 'ticket12', name: 'Education Event Seminar - Standard', price: 900, date: '03 Oct' },
+    { id: 'ticket13', name: 'Education Event Conference - VIP', price: 1800, date: '16 Nov' }
 ]);
 
 document.getElementById('view-tickets-btn').addEventListener('click', () => {
